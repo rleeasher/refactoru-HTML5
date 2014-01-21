@@ -2,6 +2,19 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; border:none;
  }
 
+html {
+	background-color: #E3E4E4;
+}
+
+@media screen (max-width: 850px) {
+	.right-container{
+		padding: 40px;
+	}
+	.left-sidebar{
+		display: none;
+	}
+}
+
 .left-tabs>li{
 	float:left;
 	list-style: none;
@@ -15,6 +28,7 @@
 
 .right-tabs {
 	padding: none;
+	background-color: white;
 }
 
 .tab {
@@ -39,7 +53,7 @@
 
 .right-container{
 	float: left;
-	width:850px;
+	max-width:850px;
 }
 
 .content {
@@ -117,7 +131,7 @@
 
 .sidebar-container {
 	border-bottom: 1px solid lightblue;
-	background-color: #F5FFFA;
+	background-color: #E3E4E4;
 	padding: 10px;
 }
 .sidebar-item a{
