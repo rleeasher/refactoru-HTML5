@@ -6,12 +6,41 @@ html {
 	background-color: #E3E4E4;
 }
 
-@media screen (max-width: 850px) {
+@media screen and (max-width: 850px) {
 	.right-container{
 		padding: 40px;
 	}
-	.left-sidebar{
+
+	.sidebar-item {
+		display: inline-block;
+	}
+
+	body .left-sidebar{
+		float: none;
+		width: 100%;
+		max-width:none;
+		min-width: none;
+	}
+
+	div .content-para {
+		width: 100%;
+	}
+
+	div .info-box {
 		display: none;
+	}
+	input {
+		width: 100px;
+	}
+	.scaling-img {
+		width: 75%;
+		height: 75%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.scaling-img {
+		display: block;
 	}
 }
 
@@ -47,13 +76,16 @@ html {
 
 .left-sidebar{
 	float: left;
-	width: 150px;
+	max-width: 30%;
 	overflow: hidden;
+
+
 }
 
 .right-container{
-	float: left;
+	float: right;
 	max-width:850px;
+	overflow: hidden;
 }
 
 .content {
@@ -61,6 +93,7 @@ html {
 	clear:both;
 	padding:20px;
 	overflow: hidden;
+	background-color: white;
 }
 
 .main-header {
@@ -80,6 +113,10 @@ html {
 	margin: auto;
 	display: block;
 
+}
+
+.section-1 {
+	overflow: hidden;
 }
 .content-para {
 	width: 65%;
@@ -142,4 +179,13 @@ html {
 	font-size: 12px;
 	list-style: none;
 	padding:4px;
+}
+
+.section-2 {
+	padding: 20px;
+	margin: 10px;
+}
+
+.scaling-img {
+	padding: 20px;
 }
